@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ModalLogin from "./ModalLogin";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isLogined, setIsLogined] = useState(false);
@@ -12,10 +13,10 @@ const Header = () => {
       </div>
       <div className="h-16 w-full px-5 flex items-center justify-between ">
         <div className="header_menu flex gap-5 font-semibold text-xl">
-          <div>강의</div>
-          <div>로드맵</div>
-          <div>멘토링</div>
-          <div>커뮤니티</div>
+          <Link to="/courses">강의</Link>
+          <Link to="/roadmaps">로드맵</Link>
+          <Link to="/mentors">멘토링</Link>
+          <Link to="/community">커뮤니티</Link>
         </div>
         <input
           className="h-12 w-3/5 border-1 border-slate-400 rounded-lg bg-slate-100 "
