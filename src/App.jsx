@@ -1,10 +1,14 @@
 // import { useState } from "react";
 import "./App.css";
-import Home from "./pages/Home";
-import Redirect from "./components/Redirect";
 import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Home from "./pages/Home";
+import Redirect from "./components/Redirect";
+import Course from "./pages/Course";
+import Community from "./pages/Community";
+import Mentor from "./pages/Mentor";
+import RoadMap from "./pages/RoadMap";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -41,6 +45,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/oauth" element={<Redirect />} />
+        <Route path="/courses" element={<Course />} />
+        <Route path="/roadmaps" element={<RoadMap />} />
+        <Route path="/mentors" element={<Mentor />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </>
   );
