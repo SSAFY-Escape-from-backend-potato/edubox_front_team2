@@ -1,3 +1,4 @@
+import CourseList from "../components/CourseList"
 import Header from "../components/Header"
 
 const Course = () => {
@@ -5,6 +6,7 @@ const Course = () => {
     <div>
       <Header />
       <h1>강의 페이지 입니다</h1>
+      <CourseList/>
     </div>
     )
 }
