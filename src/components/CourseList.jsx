@@ -66,11 +66,56 @@ const CourseList = () => {
       discount: 30,
       isFree: false,
     },
+    {
+      image: "src/assets/액셀강의.png", // Replace with the real image URL
+      title: "엑셀 활용하기 : EXCEL 중급",
+      instructor: "인프런",
+      description: "엑셀 기초를 다룰 수 있는 분들에게 중급 이상의 수준으로...",
+      level: "중급 이상",
+      price: 0,
+      originalPrice: 33000,
+      discount: 100,
+      isFree: true,
+    },
+    {
+      image: "src/assets/유니티강의.png", // Replace with the real image URL
+      title: "유니티 시스템 프로그래밍 Pt.2",
+      instructor: "BurningCarrot",
+      description: "상용 게임 구현을 위한 핵심 시스템 올인원...",
+      level: "New",
+      price: 154000,
+      originalPrice: 220000,
+      discount: 30,
+      isFree: false,
+    },
+    {
+      image: "src/assets/파이썬강의.png", // Replace with the real image URL
+      title: "프로그래밍 시작하기 : 도전! 45가지 파이썬 기초 문법 실습",
+      instructor: "인프런",
+      description: "파이썬 기초 문법을 익히고 문제를 해결해보세요...",
+      level: "5일만 100%",
+      price: 0,
+      originalPrice: 33000,
+      discount: 100,
+      isFree: true,
+    },
+    {
+      image: "src/assets/안드로이드강의.png", // Replace with the real image URL
+      title: "[포트폴리오] 안드로이드 앱 만들기",
+      instructor: "개복치개발자",
+      description: "안드로이드 앱 개발을 위한 실습 프로젝트...",
+      level: "New",
+      price: 46200,
+      originalPrice: 66000,
+      discount: 30,
+      isFree: false,
+    },
+    
   ];
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-      <h1 className="text-2xl font-bold mb-6">Course List</h1>
+      {/* <h1 className="text-2xl font-bold mb-6">Course List</h1> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {courses.map((course, index) => (
           <CourseCard key={index} {...course} />
