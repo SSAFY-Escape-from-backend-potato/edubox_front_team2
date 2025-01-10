@@ -8,8 +8,10 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between">
       <div className="flex header_logo mr-8 pl-5">
-        <img src="src/assets/Logo.png" className="h-12"></img>
-        <img src="src/assets/EduBox.png" className="h-12"></img>
+        <Link to="/" className="flex">
+          <img src="src/assets/Logo.png" className="h-12"></img>
+          <img src="src/assets/EduBox.png" className="h-12"></img>
+        </Link>
       </div>
       <div className="h-16 w-full px-5 flex flex-wrap items-center gap-5 font-semibold justify-between">
         <div className="header_menu flex gap-3 md:gap-5 font-semibold text-sm md:text-lg">
